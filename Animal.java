@@ -3,12 +3,15 @@ package Animal;
 public class Animal {
     protected String name;
     protected int age;
-    private static int numberOfAnimal;
+    protected static int numberOfAnimal;
 
     public Animal(String name, int age){
         this.name = name;
         this.age = age;
         numberOfAnimal++;
+    }
+    public int getNumberOfAnimal(){
+        return numberOfAnimal;
     }
     public void changeName(String newname){
         this.name = newname;
